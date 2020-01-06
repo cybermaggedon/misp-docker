@@ -137,6 +137,9 @@ __WELCOME__
         rm -f /.firstboot.tmp
 fi
 
+# Make MISP live
+/var/www/MISP/app/Console/cake live 1
+
 # Start supervisord
 echo "Starting supervisord"
 cd /
